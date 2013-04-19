@@ -1,0 +1,27 @@
+<h1>Listing parapluies</h1>
+
+<table>
+  <tr>
+    <th>Colour</th>
+    <th>Foldable</th>
+    <th>Handle type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @parapluies.each do |parapluie| %>
+  <tr>
+    <td><%= parapluie.colour %></td>
+    <td><%= parapluie.foldable %></td>
+    <td><%= parapluie.handle_type %></td>
+    <td><%= link_to 'Show', parapluie %></td>
+    <td><%= link_to 'Edit', edit_parapluie_path(parapluie) %></td>
+    <td><%= link_to 'Destroy', parapluie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Parapluie', new_parapluie_path %>

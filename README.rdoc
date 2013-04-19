@@ -1,0 +1,3 @@
+== Umbrella app
+
+A little app that used a before filter to DRY up the controller, and we walked through a functional test that used Machinist to avoid using fixtures.

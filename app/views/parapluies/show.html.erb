@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Colour:</b>
+  <%= @parapluie.colour %>
+</p>
+
+<p>
+  <b>Foldable:</b>
+  <%= @parapluie.foldable %>
+</p>
+
+<p>
+  <b>Handle type:</b>
+  <%= @parapluie.handle_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_parapluie_path(@parapluie) %> |
+<%= link_to 'Back', parapluies_path %>
